@@ -30,8 +30,10 @@ RUN \
     curl -O https://ipbus.web.cern.ch/doc/user/html/_downloads/8c52ef8f4a670230515a9bbfbddaf2dc/Makefile
 COPY test.hpp /tmp/test/include/
 COPY test.cxx /tmp/test/src/common/
+COPY entrypoint_env.sh /
 RUN \
+    chmod a+x /entrypoint_env.sh && \
     cd tmp/test/ &&\
-    make
-ENTRYPOINT [ "/bin/bash", "-c"]
+    make 
+ENTRYPOINT [ "/bin/bash", "-c" ]
 CMD [ "bash" ]
