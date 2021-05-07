@@ -1,0 +1,34 @@
+<node id="TOP">
+  <node id="CM"               address="0x03000000"  module="file://modules/CM.xml"                               />
+  <node id="SERV"             address="0x04000000"  module="file://modules/SERV.xml"                             />
+  <node id="SLAVE_I2C"        address="0x05000000"  module="file://modules/SLAVE_I2C.xml"                        />
+  <node id="PLXVC"            address="0x06000000"  module="file://modules/plXVC.xml"                            />
+  <node id="XVC_LOCAL"        address="0x08000000"  module="file://modules/XVC.xml"                              />
+  <node id="SM_INFO"          address="0x0a000000"  module="file://modules/FW_INFO.xml"                          />
+  <node id="MONITOR"          address="0x0b000000"  module="file://modules/MONITOR.xml"                          />
+  <node id="C2C1_AXI_FW"      address="0x0d000000"  module="file://modules/C2C1_AXI_FW.xml"                      />
+  <node id="C2C1_AXILITE_FW"  address="0x0e000000"  module="file://modules/C2C1_AXILITE_FW.xml"                  />
+  <node id="C2C2_AXI_FW"      address="0x13000000"  module="file://modules/C2C2_AXI_FW.xml"                      />
+  <node id="C2C2_AXILITE_FW"  address="0x14000000"  module="file://modules/C2C2_AXILITE_FW.xml"                  />
+  <node id="PL_MEM"           address="0x15000000"  module="file://modules/PL_MEM.xml"                           />
+  <node id="TCDS"             address="0x17000000"  module="file://modules/TCDS.xml"                             />
+  <node id="TCDS_DRP"         address="0x18000000"  module="file://modules/TCDS_DRP.xml"                         />
+  <node id="C2C1_PHY"         address="0x19000000"  module="file://modules/DRP_7_GTX.xml"                        />
+  <node id="C2C2_PHY"         address="0x1b000000"  module="file://modules/DRP_7_GTX.xml"                        />
+  <node id="AXI_MON"          address="0x1f000000"  module="file://modules/AXI_MONITOR.xml"                      />
+  <node id="INT_AXI_FW"       address="0x20000000"  module="file://modules/INT_AXI_FW.xml"                       />
+  <node id="KINTEX_SYS_MGMT"  address="0x80000000"  module="file://Kintex_modules/KINTEX_SYS_MGMT.xml"                  />
+  <node id="K_IO"             address="0x81000000"  module="file://Kintex_modules/K_IO.xml"                      />
+  <node id="CM_K_INFO"        address="0x82000000"  module="file://Kintex_modules/FW_INFO.xml"                   />
+  <node id="KINTEX_TCDS"      address="0x83000000"  module="file://Kintex_modules/KINTEX_TCDS.xml"                  />
+  <node id="KINTEX_TCDS_DRP"  address="0x84000000"  module="file://Kintex_modules/DRP_USP_GTY.xml"                  />
+  <node id="KINTEX_IPBUS"     address="0x85000000"  module="file://Kintex_modules/IPBUS.xml"                     />
+  <node id="K_C2C_PHY"        address="0x86000000"  module="file://Kintex_modules/DRP_USP_GTY.xml"                  />
+  <node id="VIRTEX_SYS_MGMT"  address="0xc0000000"  module="file://Virtex_modules/VIRTEX_SYS_MGMT.xml"                  />
+  <node id="V_IO"             address="0xc1000000"  module="file://Virtex_modules/V_IO.xml"                      />
+  <node id="CM_V_INFO"        address="0xc2000000"  module="file://Virtex_modules/FW_INFO.xml"                   />
+  <node id="VIRTEX_TCDS"      address="0xc3000000"  module="file://Virtex_modules/VIRTEX_TCDS.xml"                  />
+  <node id="VIRTEX_TCDS_DRP"  address="0xc4000000"  module="file://Virtex_modules/DRP_USP_GTY.xml"                  />
+  <node id="VIRTEX_IPBUS"     address="0xc5000000"  module="file://Virtex_modules/IPBUS.xml"                     />
+  <node id="V_C2C_PHY"        address="0xc6000000"  module="file://Virtex_modules/DRP_USP_GTY.xml"                  />
+</node>

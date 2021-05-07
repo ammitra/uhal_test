@@ -27,7 +27,11 @@ RUN \
     mkdir src/common && \
     touch include test.hpp && \
     touch src/common/test.cxx && \
-    curl -O https://ipbus.web.cern.ch/doc/user/html/_downloads/8c52ef8f4a670230515a9bbfbddaf2dc/Makefile
+    curl -O https://ipbus.web.cern.ch/doc/user/html/_downloads/8c52ef8f4a670230515a9bbfbddaf2dc/Makefile && \
+    mkdir /opt/address_tables/ && \
+    mkdir /opt/address_table/
+COPY connections.xml /opt/address_tables/
+COPY address_apollo.xml /opt/address_table/
 COPY test.hpp /tmp/test/include/
 COPY test.cxx /tmp/test/src/common/
 COPY entrypoint_env.sh /
